@@ -3,6 +3,17 @@
 ## Overview
 This project demonstrates how to perform sentiment analysis using BERT, a powerful transformer-based language model. The implementation follows a step-by-step approach, covering data preprocessing, model training, and evaluation. The model is trained on a labeled dataset using full fine-tuning, meaning all transformer layers are updated during training.
 
+## Learning Objectives
+you will learn how to analyze a dataset for sentiment analysis. You will learn how to read in a PyTorch BERT model, and adjust the architecture for multi-class classification. You will learn how to adjust an optimizer and scheduler for ideal training and performance. In finetuning this model, you will learn how to design a train and evaluate loop to monitor model performance as it trains, including saving and loading models. Finally, you will build a Sentiment Analysis model that leverages BERT's large-scale language knowledge.
+
+- What BERT is and what it can do
+- Clean and preprocess text dataset
+- Split dataset into training and validation sets using stratified approach
+- Tokenize (encode) dataset using BERT toknizer
+- Design BERT finetuning architecture
+- Evaluate performance using F1 scores and accuracy
+- Finetune BERT using training loop
+
 ## Fine-Tuning Method
 The project employs full fine-tuning of a BERT-based model (BertForSequenceClassification). This method updates all parameters, including transformer layers, rather than only modifying the classification head. Key elements of fine-tuning in this project:
 - Model Used: BertForSequenceClassification
